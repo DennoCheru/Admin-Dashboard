@@ -2,7 +2,7 @@
     --content-padding: 15px;
 
     --clr-primary: 219 29% 14%;
-    --clr-secondary: orangered;
+    --clr-secondary: #ff4500;
     --clr-neutral: 0 0% 100%;
 
     --font-family-primary: "Jaro", sans-serif;
@@ -12,6 +12,11 @@
 h2 {
     font-family: var(--font-family-primary);
     color: var(--clr-secondary);
+}
+img {
+    width: 20px;
+    align-self: center;
+    filter: invert(35%) sepia(65%) saturate(4719%) hue-rotate(3deg) brightness(103%) contrast(105%);
 }
 
 .container {
@@ -42,6 +47,8 @@ h2 {
 
 .profile {
     grid-area: profile;
+    display: flex;
+    justify-content: end;
 }
 
 .user {
@@ -56,6 +63,13 @@ h2 {
 
 .user-btns > button {
     background: var(--clr-secondary);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--font-family-text);
+}
+
+.user-btns > button:hover {
+    background: lightblue;
 }
 
 .sidebar {
@@ -121,7 +135,13 @@ h2 {
     font-family: var(--font-family-text);
     font-size: 12px;
     border-radius: 5px;
-    height: 250px;
+    height: 170px;
+}
+
+.card > .interactions {
+    display: flex;
+    justify-content: space-around;
+    background: hsl(var(--clr-primary));
 }
 
 .news {
