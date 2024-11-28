@@ -8,3 +8,46 @@
     --font-family-primary: "Jaro", sans-serif;
     --font-family-text: "Chakra Petch", sans-serif; 
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar main-content";
+    background: hsl(var(--clr-neutral));
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "search profile"
+        "user user-btns";
+    background-color: hsl(var(--clr-primary));
+    color: var(--clr-secondary);
+}
+
+.search {
+    grid-area: search;
+}
+
+.profile {
+    grid-area: profile;
+}
+
+.user {
+    grid-area: user;
+}
+
+.user-btns {
+    grid-area: user-btns;
+    display: flex;
+    justify-content: space-around;
+}
+
+.user-btns > button {
+    background: var(--clr-secondary);
+}
+
