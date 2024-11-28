@@ -1,0 +1,10 @@
+:root {
+    --content-padding: 15px;
+
+    --clr-primary: 219 29% 14%;
+    --clr-secondary: orangered;
+    --clr-neutral: 0 0% 100%;
+
+    --font-family-primary: "Jaro", sans-serif;
+    --font-family-text: "Chakra Petch", sans-serif; 
+}
